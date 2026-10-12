@@ -1,0 +1,17 @@
+{
+  "name": "weddingkit",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter @weddingkit/web dev",
+    "build": "bun run --filter @weddingkit/web build",
+    "typecheck": "bun run --filter '*' typecheck",
+    "dev:api": "bun run --filter @weddingkit/api dev",
+    "test": "bun run --filter '*' test",
+    "db:generate": "bun run --filter @weddingkit/db generate",
+    "db:migrate": "bun run --filter @weddingkit/db migrate"
+  }
+}
